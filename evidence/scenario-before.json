@@ -1,0 +1,22 @@
+{
+  "name": "UMC 단일 배포 Before",
+  "target": {
+    "url": "http://127.0.0.1:3000/health",
+    "method": "GET",
+    "headers": {},
+    "body": "",
+    "timeoutMs": 1000
+  },
+  "success": {
+    "statusCodes": [200]
+  },
+  "load": {
+    "rps": 20,
+    "durationSec": 90
+  },
+  "analysis": {
+    "slowThresholdMs": 1000,
+    "baselineSec": 30,
+    "minConsecutiveFailures": 3
+  }
+}
