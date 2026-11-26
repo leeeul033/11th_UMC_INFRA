@@ -1,0 +1,27 @@
+{
+  "name": "UMC Week2 - p95 Alert Test",
+  "target": {
+    "url": "http://umc-alb-1778749917.ap-southeast-2.elb.amazonaws.com/lab/work",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": "{}",
+    "timeoutMs": 5000
+  },
+  "success": {
+    "statusCodes": [
+      200,
+      201
+    ]
+  },
+  "load": {
+    "rps": 800,
+    "durationSec": 150
+  },
+  "analysis": {
+    "slowThresholdMs": 1000,
+    "baselineSec": 8,
+    "minConsecutiveFailures": 3
+  }
+}
