@@ -1,0 +1,11 @@
+{
+  "name": "umc-infra-deployment-lab",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "prom-client": "15.1.3"
+  }
+}
